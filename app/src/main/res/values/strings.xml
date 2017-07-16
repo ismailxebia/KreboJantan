@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Krebo Jantan</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- About tab -->
+    <string name="about_developers_label">Main developers</string>
+    <string name="about_developers"><a href="http://forum.xda-developers.com/member.php?u=4419114">rovo89</a> and <a href="http://forum.xda-developers.com/member.php?u=4322181">Tungstwenty</a>\n<a href="http://forum.xda-developers.com/member.php?u=4756862">-BioHaZard-</a> and <a href="http://forum.xda-developers.com/member.php?u=5345056">dvdandroid</a> for bug fixes and Material Design</string>
+    <string name="about_translator_label">Translator</string>
+    <string name="changelog">Changelog</string>
+    <string name="translator"></string>
+    <string name="about_version_label">Version</string>
+    <string name="about_source_label">Source code</string>
+    <string name="about_libraries_label">Used libraries</string>
+
+    <!-- Navigation -->
+    <string name="nav_about">About</string>
+    <string name="nav_reward">Redeem </string>
+    <string name="nav_bank">Nearest Bank</string>
+    <string name="nav_tips">Recycler Tips</string>
+
+
+    <string name="details">Details</string>
+    <string name="version_app">1.3.0</string>
+    <string name="tips">
+        1. Pilah Sampah berdasarkan kategorinya organik / anorganik \n
+        2. Kreasikan sampah tersebut menjadi barang yang dapat digunakan kembali\n
+        3. Dan anda bisa promosikan atau menjual ke teman anda\n
+        4. Anda bisa saja mengirimkan sampah anda ke bank sampah terdekat melalui samita agar dapat diproses
+    </string>
+    <string name="breakfast">Breakfast</string>
+    <string name="drinks">Drinks</string>
+    <string name="dessert">Dessert</string>
+    <string name="garnish">Garnish</string>
+    <string name="blank" />
+</resources>

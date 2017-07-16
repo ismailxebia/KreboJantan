@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFF</color>
+    <color name="colorPrimaryDark">#c6c6c6</color>
+    <color name="colorAccent">#dc8035</color>
+    <color name="menu_background">#119c4b</color>
+    <color name="background">#ececec</color>
+
+    <color name="colorRed">#EE4054</color>
+    <color name="colorRedDark">#D6374A</color>
+
+    <color name="windowBackground">#ECF0F1</color>
+    <color name="btn_beli_pressed">#F4D8E2</color>
+    <color name="btn_body_pressed">#0A000000</color>
+</resources>

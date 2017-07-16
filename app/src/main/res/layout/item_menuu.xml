@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="117dp"
+    android:layout_height="183dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginTop="4dp"
+    android:background="@drawable/back_item"
+    android:clickable="true"
+    android:elevation="2dp"
+    android:foreground="?android:selectableItemBackground"
+    android:orientation="vertical"
+    android:stateListAnimator="@animator/raise"
+    app:elevation="2dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_menu"
+            android:layout_width="95dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_height="95dp"
+            android:src="@drawable/avab" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_alignRight="@+id/img_menu"
+            android:background="@drawable/rounded"
+            android:orientation="horizontal">
+
+            <com.pixplicity.fontview.FontAppCompatTextView
+                android:id="@+id/txt_rate"
+                style="@style/FontTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.6"
+                android:textColor="#FFF"
+                android:textSize="10.5dp" />
+
+        </LinearLayout>
+
+        <com.pixplicity.fontview.FontAppCompatTextView
+            android:id="@+id/txt_title"
+            style="@style/FontTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:lineSpacingExtra="2dp"
+            android:lines="2"
+            android:layout_below="@+id/img_menu"
+            android:maxLines="2"
+            android:text="Spice Noodle \n with chicken"
+            android:textAlignment="center"
+            android:textColor="#262626"
+            android:textSize="12.5dp"
+            android:textStyle="bold" />
+
+        <com.pixplicity.fontview.FontAppCompatTextView
+            android:id="@+id/txt_harga"
+            style="@style/FontTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_title"
+            android:layout_marginTop="6dp"
+            android:lineSpacingExtra="2dp"
+            android:layout_marginBottom="12dp"
+            android:text="$12.00"
+            android:textColor="#767676"
+            android:textSize="11dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorRed"/>
+
+        <com.pixplicity.fontview.FontAppCompatTextView
+            android:id="@+id/txt_titlewhite"
+            style="@style/FontTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:lineSpacingExtra="2dp"
+            android:lines="2"
+            android:maxLines="2"
+            android:text="Spice Noodle \n with chicken"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:layout_marginTop="16dp"
+            android:textSize="12.5dp"
+            android:textStyle="bold" />
+
+        <com.pixplicity.fontview.FontAppCompatTextView
+            android:id="@+id/txt_hargawhite"
+            style="@style/FontTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_titlewhite"
+            android:layout_marginTop="6dp"
+            android:lineSpacingExtra="2dp"
+            android:layout_marginBottom="12dp"
+            android:text="$12.00"
+            android:textColor="#FFF"
+            android:textSize="11dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/txt_hargawhite"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_height="34dp"
+                android:layout_width="34dp"
+                android:padding="8dp"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:textColor="#FCFAFB"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/product_quantity_min"
+                android:src="@drawable/ic_minus"/>
+
+            <com.pixplicity.fontview.FontAppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="2"
+                android:textColor="#FFF"/>
+
+            <ImageView
+                android:layout_height="34dp"
+                android:layout_width="34dp"
+                android:padding="8dp"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:textColor="#FCFAFB"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/product_quantity_max"
+                android:src="@drawable/ic_plus"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

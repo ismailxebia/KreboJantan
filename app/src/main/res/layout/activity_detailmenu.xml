@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="28dp">
+
+            <RelativeLayout
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="32dp"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/elevation"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:alpha="0.7"
+                    android:background="@drawable/shaaa" />
+
+                <com.freegeek.android.materialbanner.MaterialBanner xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/material_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    app:indicatorGravity="left"
+                    app:indicatorInside="true"
+                    app:match="false" />
+
+            </RelativeLayout>
+
+            <com.pixplicity.fontview.FontAppCompatTextView
+                style="@style/FontTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="1.2dp"
+                android:text="Bebek Bakar Pak Endut" />
+
+            <com.pixplicity.fontview.FontAppCompatTextView
+                style="@style/FontTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Dessert, Spicy Food"
+                android:textColor="#686868"
+                android:textSize="12dp" />
+
+            <com.pixplicity.fontview.FontAppCompatTextView
+                style="@style/FontTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:lineSpacingExtra="2dp"
+                android:text="@string/tips"
+                android:textSize="12dp" />
+
+            <com.pixplicity.fontview.FontAppCompatTextView
+                style="@style/FontTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="32dp"
+                android:lineSpacingExtra="1.2dp"
+                android:text="Comments"
+                android:textSize="12dp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/cartdata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f4bb40"
+        android:paddingLeft="32dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:paddingRight="32dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <com.pixplicity.fontview.FontAppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="$120.000"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_height="34dp"
+            android:layout_width="34dp"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:textColor="#FCFAFB"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/product_quantity_min"
+            android:src="@drawable/ic_minus"/>
+
+        <Space
+            android:layout_width="4dp"
+            android:layout_height="match_parent" />
+
+        <com.pixplicity.fontview.FontAppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="0"
+            android:textColor="#FFF"/>
+
+        <Space
+            android:layout_width="4dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_height="34dp"
+            android:layout_width="34dp"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:textColor="#FCFAFB"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/product_quantity_max"
+            android:src="@drawable/ic_plus"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

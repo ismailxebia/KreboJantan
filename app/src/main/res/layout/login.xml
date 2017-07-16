@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:focusableInTouchMode="true">
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitEnd"
+        android:src="@drawable/back_login" />
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="230dp"
+        android:layout_height="280dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginRight="-30dp"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitEnd"
+        android:src="@drawable/back_d" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <com.pixplicity.fontview.FontAppCompatTextView
+            style="@style/FontTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Krebon Jantan"
+            android:textSize="16dp" />
+        <com.pixplicity.fontview.FontAppCompatTextView
+            style="@style/FontTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Great Taste with love"
+            android:layout_marginTop="4dp"
+            android:textColor="#838383"
+            android:textSize="11dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="70dp" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/editTextUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="32dp"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="textPhonetic"
+            android:paddingTop="10dp"
+            app:met_baseColor="#999"
+            app:met_clearButton="true"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelAnimating="true"
+            app:met_primaryColor="#efa334"
+            app:met_textColor="#000"
+            app:met_textColorHint="#b1b1b1"
+            app:met_typeface="fonts/Karla-Regular.ttf"
+            app:met_underlineColor="#d7d6d6" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="32dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingTop="16dp"
+            app:met_baseColor="#999"
+            app:met_clearButton="true"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelAnimating="true"
+            app:met_primaryColor="#efa334"
+            app:met_textColor="#000"
+            app:met_textColorHint="#b1b1b1"
+            app:met_typeface="fonts/Karla-Regular.ttf"
+            app:met_underlineColor="#d7d6d6" />
+
+        <com.pixplicity.fontview.FontAppCompatTextView
+            android:id="@+id/login_btn"
+            style="@style/FontTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/border_more"
+            android:text="Login"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

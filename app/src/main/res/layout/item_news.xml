@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:background="#FFF"
+    android:foreground="?android:selectableItemBackground"
+    android:stateListAnimator="@animator/raise">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_news"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/menub" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <com.pixplicity.fontview.FontAppCompatTextView
+                android:id="@+id/txt_news"
+                style="@style/FontTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="Cabang Baru !"
+                android:textSize="13.5dp" />
+
+            <com.pixplicity.fontview.FontAppCompatTextView
+                android:id="@+id/txt_des"
+                style="@style/FontTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:lineSpacingExtra="2dp"
+                android:maxLines="2"
+                android:text="Cabang Baru telah di buka daerah jogjakarta di wilayah dekat sragen jawa timur."
+                android:textColor="#5c5c5c"
+                android:textSize="12dp" />
+
+            <com.pixplicity.fontview.FontAppCompatTextView
+                android:id="@+id/txt_date"
+                style="@style/FontTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:maxLines="2"
+                android:text="2 Days Ago"
+                android:textColor="#7c7c7c"
+                android:textSize="9dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/a"
+        android:background="#dcdcdc" />
+
+</RelativeLayout>
